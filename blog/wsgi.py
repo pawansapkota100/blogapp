@@ -18,7 +18,7 @@ import os
 from django.core.management import execute_from_command_line
 
 if __name__ == '__main__':
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'your_project.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blog.settings')
     try:
         from django.core.management.commands.runserver import Command as runserver
         runserver.default_port = os.getenv('PORT', '8000')  # Use the PORT environment variable or default to 8000
